@@ -7,6 +7,13 @@ from kubernetes.client import models as k8s
 from airflow.providers.google.cloud.operators.kubernetes_engine import GKEStartPodOperator
 from alerts_script import airflow_alerts, warnings
 
+# To use this DAG, you need to specify:
+# - project_id
+# - location
+# - cluster_name
+# - namespace
+# - image_pull_secrets
+
 EXECUTION_DATE = '{{ execution_date }}'
 
 default_args = {
