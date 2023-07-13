@@ -1,1 +1,11 @@
-
+.*
+*.csv
+*.json
+data/
+logs/
+pythonclient/
+volume/
+plugins/
+@mathieuc/
+__pycache__/
+*.RData
